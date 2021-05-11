@@ -23,14 +23,23 @@ button {
   border: 1px solid white;
   margin: 8px;
   width: 80px;
-}
-.number {
-  width: 250px;
   height: 20px;
+  font-family: "Courgette", cursive;
   color: teal;
-  border: none;
-  border-radius: 2px;
 }
+
+input {
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  background: transparent;
+  font-family: "Courgette", cursive;
+
+  :focus {
+    outline: none;
+  }
+}
+
 .userInput {
   display: flex;
   align-items: center;
@@ -49,11 +58,13 @@ hr {
 }
 .binary,
 .hexa,
-.oct {
+.oct,
+input {
   border-bottom: white 1px solid;
-  width: 300px;
+  width: 250px;
   border-right: 1px white solid;
   border-radius: 0px 0px 5px 0px;
   text-align: center;
   font-weight: bold;
+  color: white;
 }
